@@ -3,8 +3,10 @@ import Item from "./Item";
 
 function ShoppingList({ items }) {
   const [filterProduct, setFilterProduct] = useState("All")
-  const [item, setItem] = useState(items)
-  const displayShoppingList = item.filter(eachItem =>{
+
+ 
+
+  const displayShoppingList = items.filter(eachItem =>{
     if (filterProduct === "All"){
       return true
     }else {

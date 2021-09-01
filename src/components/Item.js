@@ -11,7 +11,7 @@ function handleAdd(){
     <li className={checkCart}>
       <span>{name}</span>
       <span className="category">{category}</span>
-      <button onClick ={handleAdd} className="add">Add to Cart</button>
+      <button onClick ={handleAdd} className="add">{!cart ? "Add to Cart" : "Remove to cart"}</button>
     </li>
   );
 }

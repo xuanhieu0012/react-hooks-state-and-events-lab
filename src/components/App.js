@@ -16,7 +16,7 @@ function App() {
     <div className={appClass}>
       <header>
         <h2>Shopster</h2>
-        <button onClick= {handleMode}>Dark Mode</button>
+        <button onClick= {handleMode}>{appClass}</button>
       </header>
       <ShoppingList items={itemData} />
     </div>
